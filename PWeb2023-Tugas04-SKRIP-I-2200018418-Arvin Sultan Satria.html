@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+  <style>
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .container {
+      height: 100vh;
+      background-color: white;
+      color: black;
+      display: flex;
+      flex-direction: row;
+      padding: 0px;
+    }
+    .header {
+      background-color: orange;
+      color: black;
+      justify-content: center;
+      margin: 0%;
+      text-align: center;
+    }
+    .navbar {
+      height: 100vh;
+      background-color: wheat;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+    }
+    .content {
+      background-color: #f2f2f2;
+      justify-content: center;
+      align-items: center;
+      flex: 4;
+    }
+  </style>
+</head>
+
+<div class="header">
+  <img src="uad.png" alt="logo" width="9%">
+  <h1> Formulir Mahasiswa Universitas Ahmad Dahlan</h1>
+</div>
+
+<body>
+  <div class="container">
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Form Mahasiswa</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <form action="POST">
+            <table border="0" cellpadding="5" width="75%">
+                <tr>
+                    <td>Nama Lengkap</td>
+                    <td>:</td>
+                    <td><input type="text" name="nama" id="nama"></td>
+                </tr>
+                <tr>
+                    <td>NIM</td>
+                    <td>:</td>
+                    <td><input type="number" name="nim" id="nim"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>:</td>
+                    <td><input type="email" name="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>:</td>
+                    <td><input type="password" name="password" id="password"></td>
+                </tr>
+                <tr>
+                    <td>Tanggal Lahir</td>
+                    <td>:</td>
+                    <td><input type="date" name="tl" id="tl"></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" name="jk" id="jk" value="Laki-laki">Laki-laki
+                        <input type="radio" name="jk" id="jk" value="Perempuan">Perempuan
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hobi</td>
+                    <td>:</td>
+                    <td>
+                        <input type="checkbox" name="hobi" value="membaca">Membaca
+                        <input type="checkbox" name="hobi" value="menulis">Menulis
+                        <input type="checkbox" name="hobi" value="olahraga">Olahraga
+                        <input type="checkbox" name="hobi" value="lainnya">Lainnya
+                    </td>
+                </tr>
+                <tr>
+                    <td>Agama</td>
+                    <td>:</td>
+                    <td>
+                        <select name="agama" id="agama">
+                            <option value="Islam">Islam</option>
+                            <option value="Kristen">Kristen</option>
+                            <option value="Hindu">Hindu</option>
+                            <option value="Budha">Budha</option>
+                            <option value="Konghucu">Konghucu</option>
+                        </select>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td>:</td>
+                    <td><textarea name="alamat" id="alamat"></textarea></td>
+                </tr>
+                <tr class="submit">
+                    <td colspan="2"></td>
+                    <td><input type="submit" name="submit" id="submit"><input type="reset" name="reset" id="reset"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+  </div>
+</body>
+</html>
