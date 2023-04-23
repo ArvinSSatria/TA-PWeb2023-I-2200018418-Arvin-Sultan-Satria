@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins';
+      text-decoration: none;
+    }
+    header {
+      background-color: darkblue;
+      color: white;
+      width: 100%;
+      padding: 20px;  
+      position: relative;
+    }
+    header .logo{
+        float: left;
+        width: 20%;
+        position: relative;
+    }
+    header .logo img{
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        position: relative;
+    }
+    header .title {
+      width: 80%;
+      text-align: center;
+      position: relative;
+    }
+    
+    nav {
+        background-color: orange;
+        width: 100%;
+        font-size: larger;
+        border: 2px solid orange;
+        border-left: none;
+        border-right: none;
+    }
+    nav ul {
+        list-style-type: none;
+        font-weight: bold;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    nav ul li {
+        padding: 10px;
+    }
+    nav ul li a {
+        color: white;
+    }
+    nav ul li a:hover {
+        color: white;
+    }
+    .content {  
+      padding: 20px;
+      width: 100%;
+    }
+    .content table {
+        width: 100%;
+    }
+    .content table th {
+        padding: 10px;
+        color: white;
+        font-size: large;
+        background-color: lightslategrey;
+    }
+    .content table td {
+        padding: 15px;
+        padding-left: 5%;
+    }
+    footer {
+      background-color: lightslategrey;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      clear: both;
+      width: 100%;
+      position: relative;
+    }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+		    <img src="uad.png" alt="logo">
+	    </div>
+        <div class="title">
+            <h1>BIODATA MAHASISWA</h1>
+            <h1>UNIVERSITAS AHMAD DAHLAN</h1>
+            <h2>PROGRAM STUDI INFORMATIKA</h2>
+        </div>
+    </header>
+	<nav>
+		<ul>
+			<li><a href="">Biodata</a></li>
+			<li><a href="">GitHub</a></li>
+			<li><a href="https://uad.ac.id/id/">Website UAD</a></li>
+			<li><a href="https://portal.uad.ac.id/dashboard">Portal UAD</a></li>
+			<li><a href="https://elearning.uad.ac.id/">E-Learning UAD</a></li>
+			<li><a href="">Contact Me</a></li>
+		</ul>
+	</nav>
+	<div class="content">
+		<table>
+			<tr>
+				<th colspan="3">Data Pribadi</th>
+			</tr>
+			<tr>
+				<td>Nama</td>
+				<td>: Arvin Sultan Satria</td>
+                <td rowspan="6"><img src="lutfa.jpg" alt="foto" height="200px" width="153px"></td>
+			</tr>
+			<tr>
+				<td>NIM</td>
+				<td>: 2200018418</td>
+			</tr>
+			<tr>
+				<td>Tempat, Tanggal Lahir</td>
+				<td>: Tasikmalaya, 04 Agustus 2003</td>
+			</tr>
+			<tr>
+				<td>Jenis Kelamin</td>
+				<td>: Laki-laki</td>
+			</tr>
+			<tr>
+				<td>Agama</td>
+				<td>: Islam</td>
+			</tr>
+			<tr>
+				<td>Alamat</td>
+				<td>: Jl. Sidikan</td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td>: arvinsultansatria@gmail.com</td>
+			</tr>
+			<tr>
+				<td>No. HP</td>
+				<td>: 0812-2077-4826</td>
+			</tr>
+			<tr>
+				<td>Jenjang Pendidikan</td>
+				<td>: S1</td>
+			</tr>
+			<tr>
+				<td>Program Studi</td>
+				<td>: Informatika</td>
+			</tr>
+			<tr>
+				<td>Fakultas</td>
+				<td>: Teknologi Industri</td>
+			</tr>
+			<tr>
+				<th colspan="3">Pengalaman Organisasi</th>
+			</tr>
+			<tr>
+				<td>Perisai Diri</td>
+				<td>: 2019 - 2021</td>
+			</tr>
+			<tr>
+				<td>Ikatan Remaja Masjid</td>
+				<td>: 2019 - 2021</td>
+			</tr>
+			<tr>
+				<th colspan="3">Keterampilan</th>
+			</tr>
+			<tr>
+				<td>Bahasa Pemrograman</td>
+				<td>: C++</td>
+			</tr>
+			<tr>
+				<td>Bahasa Asing</td>
+				<td>: Inggris</td>
+			</tr>
+		</table>
+	</div>
+<footer>
+	<p>&copy; 2023 - Universitas Ahmad Dahlan</p>
+</footer>
+
+</body>
+</html>
