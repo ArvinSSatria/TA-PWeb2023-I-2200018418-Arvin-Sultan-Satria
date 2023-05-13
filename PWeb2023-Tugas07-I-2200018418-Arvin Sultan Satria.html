@@ -15,7 +15,7 @@
         .header {
             padding-bottom: 25px;
             text-align: center;
-            background: navy;
+            background: #48a39e;
             color: white;
             font-size: 20px;
             margin: 0%;
@@ -28,7 +28,7 @@
         }
         .navbar {
             flex: 1;
-            background: orange;
+            background: #F2AB3B;
             padding-top: 25px;
             padding-left: 20px;
             height: 100vh;
@@ -84,7 +84,7 @@
             </ul>    
         </div>
         <div class="content">
-            <form action="#" method="POST" onSubmit="validasi()">
+            <form>
                 <table border="0" cellpadding="5" width="75%">
                     <tr>
                         <td>Nama Lengkap</td>
@@ -148,13 +148,13 @@
                     </tr>
                     <tr class="submit">
                         <td colspan="2"></td>
-                        <td><input type="submit" name="submit" id="submit"><input type="reset" name="reset" id="reset"></td>
+                        <td><input type="submit" name="submit" id="submit" onclick="validasi()"><input type="reset" name="reset" id="reset"></td>
                     </tr>
                 </table>
             </form>
         </div>
     </div>
-    <script language="Javascript" type="text/javascript">
+    <script type="text/javascript">
         function validasi() {
             var nama = document.getElementById("nama").value;
             var nim = document.getElementById("nim").value;
@@ -162,13 +162,12 @@
             var password = document.getElementById("password").value;
             var tl = document.getElementById("tl").value;
             var jk = document.getElementById("jk").value;
-            var hobi = document.getElementById("hobi").value;
             var agama = document.getElementById("agama").value;
             var alamat = document.getElementById("alamat").value;
-            if (nama != "" && nim != "" && email!="" && password != "" && tl != "" && jk != "" && hobi != "" && agama != "" && alamat != "") {
-                return true;
-            }else {
-                alert('Anda harus mengisi data dengan lengkap !');
+            if (nama != "" && nim != "" && email!="" && password != "" && tl != "" && jk != "" && agama != "" && alamat != "") {
+                alert('Data berhasil dikirim!')
+            } else {
+                alert('Anda harus mengisi data dengan lengkap!');
             }
         }
     </script>
