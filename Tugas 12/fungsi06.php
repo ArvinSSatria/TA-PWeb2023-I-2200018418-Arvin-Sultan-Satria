@@ -1,7 +1,10 @@
 <?php
-    if (function_exists("exif_read_data")) {
-        echo "Fungsi exif_read_data() ada di PHP versi ini.<br />\n";
-    } else {
-        echo "Fungsi exif_read_data() tidak ada di PHP versi ini.<br />\n";
+    function luas_segitiga($jari) {
+        return 3.14 * $jari * $jari;
     }
+
+    $arr = get_defined_functions();
+    echo "<pre>";
+    print_r($arr);
+    echo "</pre>";
 ?>

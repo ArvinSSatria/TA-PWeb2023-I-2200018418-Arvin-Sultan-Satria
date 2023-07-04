@@ -5,9 +5,10 @@
         echo "Nilai $nama = $nilai<br>";
     }
 
-    reset($arrNilai);
+    $arrNilai = array("Adid" => 80, "Iky" => 90, "Dian" => 75, "Arvin" => 85);
     echo "<br>Menampilkan isi array asosiatif dengan WHILE dan LIST: <br>";
-    while (list($nama, $nilai) = each($arrNilai)) {
+    foreach ($arrNilai as $nama => $nilai) {
         echo "Nilai $nama = $nilai<br>";
     }
 ?>
+
